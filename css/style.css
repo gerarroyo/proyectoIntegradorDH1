@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+  overflow: hidden;
+  width: 100%;
+}
+
+/*encabezado*/
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: #45454d;
+    overflow: hidden;
+
+
+}
+
+.logo{
+    float: left;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+.logo h3{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+
+.hamburguesa{
+    display: inline;
+
+}
+
+.fas.fa-bars{
+    color: white;
+    margin-left: 7px;
+    margin-top: 8px;
+
+}
+
+.login-compras{
+    float: right;
+    overflow: hidden;
+
+
+}
+
+.usuario{
+    float: left;
+    margin-right: 5px
+
+}
+
+.fas.fa-user{
+
+    color: white;
+    margin-top: 6px;
+    margin-right: 2px;
+
+}
+
+.fas.fa-sign-in-alt{
+  color: white;
+  margin-right: 5px;
+}
+
+.login-escritorio{
+    display: none;
+}
+
+.carrito{
+    float: right;
+}
+
+.fas.fa-shopping-cart{
+    color: white;
+    margin-right: 5px;
+    margin-top: 6px
+
+}
+
+
+/*cuerpo principal*/
+
+
+body{
+  background-color: #FCC82A;
+}
+
+.menu-mobile{
+  background-color: #45454d;
+}
+
+.lista-mobile {
+  text-align: center;
+  border-bottom: 1px solid, white;
+
+}
+
+.lista-mobile li{
+  border-bottom: 1px solid white;
+}
+
+.lista-mobile a{
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
+
+main{
+    margin-top: 2px;
+    background-color: #FCC82A;
+}
+.busqueda{
+    overflow: hidden;
+    position: center;
+}
+
+.lupa{
+    float: left;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+form{
+    float: left;
+    width: 90%;
+    margin-left: 7px;
+}
+
+input.buscar{
+    width: 100%;
+    text-align: -webkit-center;
+    -webkit-appearance: button;
+
+}
+
+div .happy {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 21px;
+    margin-bottom: 19px;
+    padding-bottom: 1;
+    padding-top: 1;
+    color: white;
+    background: black;
+}
+
+#body{
+  position: relative;
+  height: 100%;
+  background-color: #FCC82A;
+}
+
+
+.productos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FCC82A;
+
+}
+
+
+
+div.kits-en-oferta {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  margin: 50px;
+  margin-top: 30px;
+  background-color: #FCC82A;
+}
+
+div.kits-en-oferta margin {
+  background-color: #FCC82A;
+}
+
+.productos img{
+  width: 300px;
+}
+
+.descripcion-producto {
+      font-size: 11px;
+}
+
+p {
+  text-align: center;
+}
+
+
+.titulo-producto {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: -6px;
+
+}
+
+h4 {
+  text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+ div .titulo-descripcion-prodcucto {
+   background-color: white;
+   margin-top: 10;
+ }
+
+ .pie{
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+   bottom: 0;
+   height: 50px;;
+   background-color: #45454d;
+ }
+
+ .pie-pagina {
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+
+ }
+
+ .pie-pagina a{
+
+  color: white;
+ }
+ 
+.contacto{
+  text-align: center;
+} 
+
+.contacto p a{
+  color: white;
+  font-family: 'Comfortaa', cursive; 
+  cursor: pointer;
+}
+
+
+/*versión de Escritorio*/
+
+@media (min-width: 768px) {
+  .productos {
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+@media (min-width: 1024px){
+
+    header{
+        height: 50px;
+    }
+
+    .logo h3{
+        font-size: 35px;
+    }
+    .hamburguesa{
+        display: none;
+    }
+
+    .usuario{
+        display: none;
+
+    }
+
+
+    .login-escritorio{
+        margin-right: 30px;
+        display: inline-block;
+        padding-top: 6px;
+
+    }
+    .login-escritorio li{
+        display: inline;
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    .link{
+        color: white;
+
+    }
+
+    .link a{
+      color: white;
+    }
+
+    .fas.fa-shopping-cart{
+        margin-top: 14px;
+        margin-right: 30px;
+
+    }
+      /*CUERPO PRINCIPAL*/
+
+      .menu-mobile{
+        display: none;
+      }
+    .busqueda{
+        text-align: center;
+    }
+    .productos {
+      position: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .producto5{
+      margin-right: 10px;
+    }
+    /* aca empieza el footer*/
+  
+
+    .pie{
+      overflow: hidden;
+    }
+  .pie-pagina {
+    margin-left: 5px;
+    margin-top: 10px;
+    float: left;
+    font-family: 'Comfortaa', cursive;
+  }
+ 
+  .pie-pagina a{
+ 
+   color: white;
+   font-family: 'Comfortaa', cursive;
+   cursor: pointer;
+  }
+  
+  .contacto{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;  
+    
+  }
+
+  .contacto a{
+   
+  }
+ }
+
